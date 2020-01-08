@@ -38,7 +38,7 @@ print_r($topicMessage);
 
 ```
 
-## 发布任务
+## 消费任务
 > 请参考cd/src/tests/consumerTest.php
 
 ```php
@@ -56,7 +56,7 @@ class run
         print_r($message);
         print($message->getProperty('num')); //获取重试数量 第一次运行为0
         print_r($message->messageBodyArray); //获取body数组
-        print_r($message->getMessageBody); //获取原始body字符串
+        print_r($message->getMessageBody()); //获取原始body字符串
 
         $consumer->delete();//确认消费 发送ack
 
