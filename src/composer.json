@@ -1,0 +1,19 @@
+{
+    "name": "1kb/Rocket-mq",
+    "description": "封装RocketMQ",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "onekb",
+            "email": "1@1kb.ren"
+        }
+    ],
+    "require": {
+        "aliyunmq/mq-http-sdk": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "onekb\\RocketMQ\\": "src"
+        }
+    }
+}
